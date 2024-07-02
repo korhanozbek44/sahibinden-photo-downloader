@@ -3,10 +3,6 @@
   "name": "Sahibinden Görsel İndirici",
   "description": "İlandaki tüm görselleri kaliteli bir şekilde indirin.",
   "version": "1.0",
-  "permissions": [
-    "webRequest",
-    "activeTab"
-  ],
   "content_scripts": [
     {
       "js": ["index.js"],

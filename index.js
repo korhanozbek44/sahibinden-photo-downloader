@@ -30,8 +30,44 @@ const onButtonClicked = async () => {
 }
 
 const container = document.querySelector('.classified-images-status');
+const style = document.createElement('style');
+style.innerHTML = `
+#gorselleriIndir {
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  position:absolute;
+  right:20px;
+  top:8px;
+  font-family: "SHBGroteskLegacy",Roboto,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: normal;
+  text-size-adjust: none;
+  letter-spacing: .1px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: no-repeat 0 0;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+  background-color: #ffc000;
+  color: #333;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 800;
+  border:none;
+}
+#gorselleriIndir:hover {
+  background-color: #edb302;
+}
+`;
+container.append(style);
 const b = document.createElement('button');
-b.innerHTML = 'Tümünü  İndir';
+b.innerHTML = 'Görselleri İndir';
+b.id = "gorselleriIndir";
 b.onclick = onButtonClicked;
-b.style = 'position:absolute;right:20px;top:8px;font-family: "SHBGroteskLegacy",Roboto,sans-serif; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; text-size-adjust: none; letter-spacing: .1px; text-align: center; margin: 0; padding: 0; background: no-repeat 0 0; text-decoration: none; outline: 0; cursor: pointer; color: #039; font-size: 15px;border:none;';
 container.append(b);
