@@ -3,6 +3,8 @@
   "name": "Sahibinden Görsel İndirici",
   "description": "İlandaki tüm görselleri kaliteli bir şekilde indirin.",
   "version": "1.0",
+  "permissions": ["downloads"],
+  "host_permissions": ["https://*.shbdn.com/*"],
   "content_scripts": [
     {
       "js": ["index.js"],
